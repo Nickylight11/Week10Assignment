@@ -1,3 +1,4 @@
+<!-- Added HTML Boiler Plate w/ link to bootstrap -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href= "node_modules/bootstrap/dist/css/bootstrap.css"
 </head>
-<h1>Shopping List for Chanukah Harry</h1>
+
+<!-- Centered and colored my title -->
+<h1 style="color:blue; text-align: center;">Shopping List for Chanukah Harry</h1>
+
+<!-- Created containers and cards to withhold Gift, Price, and Recipient. They all used text fields. -->
 <body class="container">
 <br> 
 <div class ="card">
@@ -18,25 +23,32 @@
                     <input type="text" class="form-control" id="new-gift">
                 </div>
              </div>
-             <div class = "col-sm">
+            <div class = "col-sm">
                 <div class = "form-group">
                     <label for = "new-price">Price</label>
                     <input type="text" class="form-control" id="new-price">
                 </div>
              </div>
         </div>
-    </div>
-    <div class="row">
-        <div class = "col-sm">
-            <div class = "form-group">
+        <div class="row">
+            <div class = "col-sm">
+                <div class = "form-group">
                     <label for = "new-recipient">Recipient</label>
-                    <input type="text" class="form-control" id="new-task">
-                 </div>
+                    <input type="text" class="form-control" id="new-recipient">
+                </div>
             </div>
         </div>
     <div> <button id = "add" class ="btn btn-primary from-control"> Add Gift</button>
+
+<!-- Added a button to "Add Gift" -->
     </div>
-<table id ="list" class="table table-dark table-striped">
+</div>
+
+<!-- Found an image online of a menorah and made that my background (created a step/repeat effect) -->
+<body background="https://thumbs.dreamstime.com/b/hanukkah-menorah-21455434.jpg", cover;>
+
+<!-- Since my background is dark I used a light themed table for easier readability -->
+<table id ="list" class="table table-light table-striped">
     <tr>
         <th>Gift</th>
         <th>Price</th>
@@ -48,6 +60,7 @@
 
 </table>
 
+<!-- created my script sources to JavaScript, jQuery, and Bootstrap -->
     <script src="gifts.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
